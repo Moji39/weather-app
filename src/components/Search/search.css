@@ -1,0 +1,25 @@
+.search-input {
+    background-color: var(--neutral-800);
+    border-radius: 12px;
+    padding: 16px 24px;
+    color: var(--neutral-200);
+}
+
+.search-button {
+    cursor: pointer;
+    background-color: var(--primary-blue-500);
+    color: var(--neutral-0);
+    border-radius: 12px;
+    padding: 16px 24px;
+}
+
+.search-button.button-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media (hover: hover) {
+    .search-button:not(.button-disabled):hover {
+        background-color: var(--primary-blue-700);
+    }
+}

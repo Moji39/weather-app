@@ -1,0 +1,86 @@
+.units-button {
+  color: var(--neutral-0);
+  background-color: var(--neutral-800);
+}
+
+.dropdown-content {
+  display: none;
+  min-width: 214px;
+  max-width: 100%;
+  background-color: var(--neutral-800);
+  border: 1px solid var(--neutral-600);
+}
+
+.dropdown-content.is-open {
+  display: block;
+}
+
+.dropdown-section:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--neutral-600);
+}
+
+.dropdown-section:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.dropdown-section-title {
+  color: var(--neutral-300);
+}
+
+.dropdown-item {
+  padding: 10px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.dropdown-switch {
+  cursor: pointer;
+}
+
+.dropdown-item:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.dropdown-item.dropdown-item-selected {
+  background-color: var(--neutral-700);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-icon {
+  transition: transform 0.3s ease-in-out;
+  transform: rotateZ(0);
+}
+
+.is-open .dropdown-icon {
+  transition: transform 0.3s ease-in-out;
+  transform: rotateZ(180deg);
+}
+
+.dropdown-trigger:focus-within button,
+.search-input:focus-within {
+  outline: 2px solid var(--neutral-0);
+  outline-offset: 4px;
+}
+
+.search-button:focus-within {
+  outline: 2px solid var(--primary-blue-500);
+  outline-offset: 4px;
+}
+
+@media (hover: hover) {
+  .dropdown-item:hover {
+    background-color: var(--neutral-700);
+  }
+
+  .dropdown-switch:hover {
+    background-color: var(--neutral-700);
+  }
+}

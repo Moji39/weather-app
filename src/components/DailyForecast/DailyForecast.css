@@ -1,0 +1,22 @@
+.forecast {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(89px, 1fr));
+    gap: 16px;
+}
+
+.forecast-item {
+    min-height: 174px;
+    background-color: var(--neutral-800);
+    border: 1px solid var(--neutral-600);
+    border-radius: 12px;
+    padding: 16px 10px;
+}
+
+.forecast-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.max {
+    color: var(--neutral-200);
+}

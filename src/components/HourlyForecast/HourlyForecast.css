@@ -1,0 +1,23 @@
+.days-button {
+    background-color: var(--neutral-600);
+    min-width: 147px;
+}
+
+.hourly-forecast-item {
+    background-color: var(--neutral-700);
+    border: 1px solid var(--neutral-600);
+}
+
+.scrollable::-webkit-scrollbar {
+    width: 4px;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+    background-color: var(--neutral-700);
+    border: 1px solid var(--neutral-600);
+    border-radius: 999px;
+}
+
+.hourly-forecast-item {
+    min-height: 62px;
+}

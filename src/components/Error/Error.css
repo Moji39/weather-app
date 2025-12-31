@@ -1,0 +1,7 @@
+.error-message {
+    color: var(--neutral-200);
+}
+
+.retry-button {
+    background-color: var(--neutral-800);
+}

@@ -1,0 +1,79 @@
+.text-1 {
+  font-family: var(--font-family-primary);
+  letter-spacing: -2px;
+  font-size: 96px;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 100%;
+}
+
+.text-2 {
+  font-family: var(--font-family-secondary);
+  font-size: 52px;
+  line-height: 120%;
+  font-weight: 700;
+}
+
+.text-3 {
+  font-family: var(--font-family-primary);
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 100%;
+}
+
+.text-4 {
+  font-family: var(--font-family-primary);
+  line-height: 1.2;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.text-5 {
+  font-family: var(--font-family-primary);
+  line-height: 1.2;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.text-5-medium {
+  font-family: var(--font-family-primary);
+  line-height: 1.2;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.text-6 {
+  font-family: var(--font-family-primary);
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.text-7 {
+  font-family: var(--font-family-primary);
+  line-height: 1.2;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.text-8 {
+  font-family: var(--font-family-primary);
+  line-height: 1.2;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+@media (width >= 768px) {
+  .md\:text-7 {
+    font-family: var(--font-family-primary);
+    line-height: 1.2;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+  }
+}
