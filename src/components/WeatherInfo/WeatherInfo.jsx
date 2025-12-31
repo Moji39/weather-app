@@ -30,7 +30,7 @@ const WeatherInfo = () => {
 
   const currentTemp =
     !loading && isDefined(data?.current?.temperature_2m)
-      ? `${Math.round(data.current.temperature_2m)} ${temperatureUnitLabel}`
+      ? `${Math.round(data.current.temperature_2m)}°`
       : "";
   const feelsLike =
     !loading && isDefined(data?.current?.apparent_temperature)
