@@ -3,6 +3,7 @@ import "./HourlyForecast.css";
 import { Dropdown } from "../components";
 import { useWeather } from "../../context/weatherCore";
 import { format } from "date-fns";
+import dropdownIcon from "../../assets/images/icon-dropdown.svg";
 
 const HourlyForecastItem = ({ time, icon, temp }) => {
   return (
@@ -59,7 +60,7 @@ const HourlyForecast = () => {
           <Dropdown dropdownContent={loading ? [] : days} onSelect={handleDayClick}>
             <button className="flex items-center justify-between px-4 py-2 rounded-lg days-button" disabled={loading}>
               <span className="text-7 mr-3">{loading ? "—" : selectedDay}</span>
-              <img src="./src/assets/images/icon-dropdown.svg" className="icon dropdown-icon" alt="" />
+              <img src={dropdownIcon} className="icon dropdown-icon" alt="" />
             </button>
           </Dropdown>
         </div>

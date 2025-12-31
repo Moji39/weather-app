@@ -143,7 +143,7 @@ const Search = ({ onSelectCity }) => {
       </div>
 
       <button
-        className={`search-button text-5-medium text-center md:max-w-fit ${
+        className={`search-button text-5-medium text-center w-full md:max-w-fit ${
           cityInput.length >= 3 ? "" : "button-disabled"
         }`}
         disabled={cityInput.length < 3}
