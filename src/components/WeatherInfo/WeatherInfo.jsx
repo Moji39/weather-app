@@ -2,6 +2,8 @@ import React from "react";
 import "./WeatherInfo.css";
 import { useWeather } from "../../context/weatherCore";
 import { format } from "date-fns";
+import bgSmall from "../../assets/images/bg-today-small.svg";
+import bgLarge from "../../assets/images/bg-today-large.svg";
 
 const SecondaryInfoItem = ({ label, value }) => {
   return (
@@ -57,8 +59,8 @@ const WeatherInfo = () => {
             loading ? "hidden" : ""
           }`}
         >
-          <div className="bg bg-small md:hidden"></div>
-          <div className="bg bg-large hidden md:block"></div>
+          <div className="bg md:hidden" style={{ backgroundImage: `url(${bgSmall})` }}></div>
+          <div className="bg hidden md:block" style={{ backgroundImage: `url(${bgLarge})` }}></div>
         </div>
         <div className="main-info px-6 py-8 md:py-20 md:flex md:justify-between md:items-center">
           {!loading ? (

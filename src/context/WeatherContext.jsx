@@ -1,6 +1,14 @@
 import React, { useState, useCallback, useEffect } from "react";
 import { fetchWeatherByCoords } from "../service/weatherService";
 import { WeatherContext } from "./weatherCore";
+import sunny from "../assets/images/icon-sunny.webp";
+import partlyCloudy from "../assets/images/icon-partly-cloudy.webp";
+import overcast from "../assets/images/icon-overcast.webp";
+import fog from "../assets/images/icon-fog.webp";
+import drizzle from "../assets/images/icon-drizzle.webp";
+import rain from "../assets/images/icon-rain.webp";
+import snow from "../assets/images/icon-snow.webp";
+import storm from "../assets/images/icon-storm.webp";
 
 const STORAGE_KEY = "weather_app_units";
 
@@ -117,38 +125,38 @@ export const WeatherProvider = ({ children }) => {
   };
 
   const weatherCodeMapping = (code) => {
-    const base = "./src/assets/images/icon-";
+    const base = "/weather-app/assets/images/icon-";
 
     switch (true) {
       case code == 0:
-        return `${base}sunny.webp`;
+        return sunny;
 
       case code == 1 || code == 2:
-        return `${base}partly-cloudy.webp`;
+        return partlyCloudy;
 
       case code == 3:
-        return `${base}overcast.webp`;
+        return overcast;
 
       case code >= 40 && code < 50:
-        return `${base}fog.webp`;
+        return fog;
 
       case code >= 50 && code < 60:
-        return `${base}drizzle.webp`;
+        return drizzle;
 
       case code >= 60 && code < 70:
-        return `${base}rain.webp`;
+        return rain;
 
       case code >= 70 && code < 80:
-        return `${base}snow.webp`;
+        return snow;
 
       case code == 80 || code == 81 || code == 82:
-        return `${base}rain.webp`;
+        return rain;
 
       case code == 85 || code == 86:
-        return `${base}snow.webp`;
+        return snow;
 
       case code >= 90 && code < 100:
-        return `${base}storm.webp`;
+        return storm;
 
       default:
         return "";

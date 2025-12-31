@@ -3,6 +3,7 @@ import "./Search.css";
 import Dropdown from "../Drowpdown/Dropdown.jsx";
 import { geocodeCity } from "../../service/cityService.js";
 import { useWeather } from "../../context/weatherCore";
+import searchIcon from "../../assets/images/icon-search.svg";
 
 const normalize = (s = "") => s.trim().toLowerCase();
 
@@ -118,7 +119,7 @@ const Search = ({ onSelectCity }) => {
           isToggle={false}
         >
           <img
-            src="./src/assets/images/icon-search.svg"
+            src={searchIcon}
             alt=""
             className="w-6 h-6 mr-6"
           />

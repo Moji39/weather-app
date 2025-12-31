@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./Dropdown.css";
+import checkmarkIcon from "../../assets/images/icon-checkmark.svg";
 
 const Dropdown = ({
   children,
@@ -102,7 +103,7 @@ const Dropdown = ({
                     onClick={() => handleItemClick(sectionKey, itemKey, itemValue)}>
                     <div className="dropdown-item-value">{itemValue}</div>
                     {isSelected && (
-                      <img src="./src/assets/images/icon-checkmark.svg" alt="" />
+                      <img src={checkmarkIcon} className="dropdown-item-checkmark" alt="" />
                     )}
                   </div>
                 );
